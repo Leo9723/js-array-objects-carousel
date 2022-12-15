@@ -1,4 +1,4 @@
-* {
+/* * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -11,7 +11,7 @@
     justify-content: center;
 }
 
-.slider-container {
+#slider-container {
     display: flex;
 }
 
@@ -20,6 +20,7 @@
     background-size: cover;
     height: 50vh;
     width: 50vw;
+    display: none;
 }
 
 img {
@@ -49,11 +50,127 @@ img {
     top: 68vh;
 }
 
-.text {
+h3, p {
     width: 100%;
     position: relative;
     bottom: 60px;
     text-align: right;
     color: white;
     padding-right: 10px;
+}
+
+.active{
+    display: block;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider{
+    width: 50vw;
+    height: 50vh;
+    position:relative;
+}
+
+.item{
+    display: none;
+}
+
+.item-slider, .item, img{
+    height: 100%
+}
+
+.item img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.arrow{
+    position: absolute;
+    width: 40px;
+    background-color: rgba(174, 174, 174, 0.509);
+    border-radius: 50px;
+    font-weight: 800; 
+    left: 50%;
+    font-size: 30px;
+    transform: translateX(-50%);
+    text-align: center;
+    cursor: pointer;
+}
+
+.next{
+    top: 5px; 
+}
+
+.prev{
+    bottom: 5px;
+}
+
+.prev:hover, .next:hover{
+    background-color: rgba(174, 174, 174, 1);   
+}
+
+.item.active{
+    display: block;
+}
+
+.circles-container{
+    display: flex;
+    justify-content: center;
+}
+
+.circle{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(174, 174, 174, 0.509);
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+.circle.active, .circle:hover{
+    background-color: rgba(174, 174, 174, 1); 
+}
+
+
+
+h3, p {
+    width: 100%;
+    position: relative;
+    bottom: 70px;
+    text-align: right;
+    color: white;
+    padding-right: 10px;
+}
+
+#tumbnail {
+    background-color: black;
+}
+
+#tumbnail img {
+    width: 100px;
+    height: calc(50vh / 5);
+    display: block;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+#tumbnail img.tumb-active {
+    opacity: 1;
+}
+
+button {
+    padding: 5px;
 }

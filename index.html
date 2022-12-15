@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,14 +10,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="slider-container">
-            <div class="slider">
-                <img src="./img/01.webp" alt="">
-                <div class="text">
-                    <h3 id="title">titolo del gioco</h3>
-                    <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                </div>
-            </div>
+        <div id="slider-container">
             <div class="tumbnail">
                 <div class="prevew"><img src="./img/01.webp" alt=""></div>
                 <div class="prevew"><img src="./img/02.webp" alt=""></div>
@@ -32,4 +25,41 @@
 
     <script src="./js/script.js"></script>
 </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+    <body>
+        <div class="container">
+            <div class="slider">
+                <div class="item-slider">
+                </div>
+                <div class="arrow prev">&larr;</div>
+                <div class="arrow next">&rarr;</div>
+                <div class="circles-container">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+            </div>
+            <div id="tumbnail">
+
+            </div>
+            <div>
+                <button id="play">play</button>
+                <button id="stop">stop</button> 
+                <button id="back">indietro</button>
+            </div>
+        </div>
+        <script type="text/javascript" src="./js/script.js"></script>
+    </body>
 </html>
